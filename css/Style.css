@@ -1,3 +1,4 @@
+/* formatação estrutural inicio */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -7,19 +8,97 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: #05252b;
+    color:#ffa500 ;
 }
 #MainHeader{
     position: fixed;
     width: 100vw;
     height: 7.5vh;
 }
-.Nav-MainHeader ul{
-    display: flex;
-    flex-direction: row;
-    gap: 1.5vw;
-}
-
 #CorpoPagina{
     position: fixed;
     margin-top: 7.5vh;
+    width: 100vw;
+    height: 90vh;
+    border: 1px solid white;
 }
+#MainFooter{
+    margin-top: 97.5vh;
+    position: fixed;
+}
+/* fim formatação estrutural */
+
+/* inicio formatação de alinhamento */
+
+.AlinhadoCen{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ALinhadoDir{
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+}
+
+.AlinhadoEsq{
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Final formatação de alinhamento */
+
+/* inicio formatações gerais */
+
+.RowFake{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    list-style: none;
+}
+
+.Fake-Button{
+    padding: .5vw .8vh;
+    border-radius: 16px;
+    border: 2px solid #ffa500;
+    background-color: #dbf5f4;
+    color: #ffa500;
+    font-weight: bolder;
+    transition: all ease-in-out .8s;
+}
+.Fake-Button:hover{
+    padding: .5vw .8vh;
+    border-radius: 20px;
+    border: 2px solid #dbf5f4;
+    background-color: #ffa500;
+    color: #dbf5f4;
+    font-weight: bolder;
+}
+
+* a{
+    color: #dbf5f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Final formatações gerais */
+
+/* inicio formatação header */
+
+#MainHeader{
+    padding: 2.5vh 2.5vw;
+    background-color:#05252b ;
+}
+
+/* Final formatação header */
+
+/* inicio Formatação main */
+
+#CorpoPagina{
+    padding: 2.5vh 3.25vw ;
+}
+
+/* Final Formatação main */
