@@ -110,22 +110,42 @@ body{
 #MenuLateral{
     position: fixed;
     width: 15vw;
-    border: 1px solid red;
+    border: 1px solid #05252b;
+    background-color: #ffa500;
     height: 85vh;
     padding: 2.5vh 2.5vw;
-
+    border-radius: 16px;
+}
+#MenuLateral ul{
+    list-style: none;
+}
+#MenuLateral li{
+    color: black;
+    background-color: #ababab;
+    margin: 1.2vh;
+    border:2px solid #dbf5f4;
+    padding: .8vh .8vw;
+    border-radius: 16px;
+    transition: all .2s ease-in-out;
+}
+#MenuLateral li:hover{
+    margin: 1.2vh;
+    border:3px solid #dbf5f4;
+    padding: .5vh .5vw;
+    border-radius: 12px;
 }
 #Cardapio{
+    background-color: #dbf5f4;
     position: fixed;
     margin-left: 20vw;
     border: 1px white solid;
     width: 75vw;
     height: 85vh;
     padding: 1.5%;
+    border-radius: 8px;
 }
 
 #AreaRolagem {
-    border: 1px solid green;
     padding: .5%;
     position: relative; 
     height: 100%;
@@ -158,6 +178,8 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     margin: .8vh .8vw;
+    background-color: #ffa500;
+    transition: all 1s ease-in-out;
 }
 
 .ThGrid1-2 a {
@@ -167,5 +189,10 @@ body{
 }
 .ThGrid1-2 a img{
     object-fit: cover;
+}
+
+.ThGrid1-2:hover{
+    transform: scale(1.01);
+    overflow: hidden;
 }
 /* Fim formatação grid */
