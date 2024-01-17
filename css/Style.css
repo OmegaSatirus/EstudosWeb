@@ -22,6 +22,7 @@ body{
     width: 100vw;
     height: 90vh;
     border: 1px solid white;
+    padding: 2.5vh 2.5vh;
 }
 #MainFooter{
     margin-top: 97.5vh;
@@ -101,4 +102,56 @@ body{
     padding: 2.5vh 3.25vw ;
 }
 
+#MenuLateral{
+    position: fixed;
+    width: 15vw;
+    border: 1px solid red;
+    height: 85vh;
+    padding: 2.5vh 2.5vw;
+
+}
+#Cardapio{
+    position: fixed;
+    margin-left: 20vw;
+    border: 1px white solid;
+    width: 75vw;
+    height: 85vh;
+    padding: 1.5%;
+}
+
+#AreaRolagem {
+    border: 1px solid green;
+    padding: .5%;
+    position: relative; 
+    height: 100%;
+    overflow: auto;
+}
+
+#TablePrincipal{
+    border: blue solid 1px;
+    padding: .5%;
+    width: 100%;
+}
+
+#AreaRolagem th{
+    
+}
 /* Final Formatação main */
+
+/* inicio formatação grid */
+.Tr-TablePrincipal{
+    display: flex;
+    flex-direction: row;
+}
+
+.ThGrid1-2{
+    border: #dbf5f4 solid 1px;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Fim formatação grid */
