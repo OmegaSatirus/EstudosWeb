@@ -22,11 +22,11 @@
     <main id="CorpoPagina" class="AlinhadoCen">
         <section id="Comida">
             <div id="AreaRolagem" class="AlinhadoCen">
-                <div id="GrandeImagem">s</div>
+                <div id="GrandeImagem"></div>
                 <h3>Comida 01</h3>
                 <div class="Row1-2H AlinhadoCen">
                     <div class="MetadeHorizontal">
-                        <div class="Ingredientes">
+                        <div id="Ingredientes">
                             <h2>Ingredientes</h2>
                             <ul>
                                 <li>Item1</li>
@@ -58,12 +58,12 @@
                                 <div class="MetadeVertical">
                                     <h3>Levar Guardanapo</h3>
                                     <div class="Row1-2V">
-                                        <label for="SimCebola">SIM</label>
-                                        <input type="radio" name="Cebola" id="SimCebola">
+                                        <label for="SimGuardanapo">SIM</label>
+                                        <input type="radio" name="Guardanapo" id="SimGuardanapo">
                                     </div>
                                     <div class="Row1-2V">
-                                        <label for="NaoCebola">NÃO</label>
-                                        <input type="radio" name="Cebola" id="NaoCebola">
+                                        <label for="NaoGuardanapo">NÃO</label>
+                                        <input type="radio" name="Guardanapo" id="NaoGuardanapo">
                                     </div>
                                 </div>
                             </div>
@@ -71,53 +71,55 @@
                                 <h2>Adicionais</h2>
                                 <div class="Tr-TablePrincipalV AlinhadoCen">
                                     <div>
-                                        <label for="AdcBacon"><input type="checkbox" name="Adicionais"
-                                                id="AdcBacon">Bacon</label>
+                                        <label for="AdcBacon">Bacon<input type="checkbox" name="Adicionais"
+                                                id="AdcBacon"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcMilho"><input type="checkbox" name="Adicionais"
-                                                id="AdcMilho">Milho</label>
+                                        <label for="AdcMilho">Milho<input type="checkbox" name="Adicionais"
+                                                id="AdcMilho"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcCebola"><input type="checkbox" name="Adicionais"
-                                                id="AdcCebola">Cebola</label>
+                                        <label for="AdcCebola">Cebola<input type="checkbox" name="Adicionais"
+                                                id="AdcCebola"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcKatchup"><input type="checkbox" name="Adicionais"
-                                                id="AdcKatchup">Katchup</label>
+                                        <label for="AdcKatchup">Katchup<input type="checkbox" name="Adicionais"
+                                                id="AdcKatchup"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcMostarda"><input type="checkbox" name="Adicionais"
-                                                id="AdcMostarda">Mostarda</label>
+                                        <label for="AdcMostarda">Mostarda<input type="checkbox" name="Adicionais"
+                                                id="AdcMostarda"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcSalada"><input type="checkbox" name="Adicionais"
-                                                id="AdcSalada">Salada</label>
+                                        <label for="AdcSalada">Salada<input type="checkbox" name="Adicionais"
+                                                id="AdcSalada"></label>
                                     </div>
                                     <div>
-                                        <label for="AdcQueijo"><input type="checkbox" name="Adicionais"
-                                                id="AdcQueijo">Queijo</label>
+                                        <label for="AdcQueijo">Queijo<input type="checkbox" name="Adicionais"
+                                                id="AdcQueijo"></label>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="Row1-2H">
+                <div class="Row1-2H AlinhadoCen">
                     <div class="MetadeHorizontal">
-                        <button>
+                        <h3>Adicionar ao carrinho</h3><br>
+                        <h3>R$ 25</h3>
+                        <button class="NoBorderInpt">
                             <h3><b>+</b></h3>
                         </button>
                         <div id="Total">
                             <p>0</p>
                         </div>
-                        <button>
+                        <button class="NoBorderInpt">
                             <h3><b>-</b></h3>
                         </button>
                     </div>
-                    <div class="MetadeHorizontal">
+                    <div class="MetadeHorizontal AjusteDeTamanho AlinhadoCen">
                         <h2>ARRASTE E CONFIRME</h2>
-                        <input type="range" min="0" max="25" value="50" step="1">
+                        <input type="range" min="0" max="25" value="0" step="1">
                     </div>
                 </div>
             </div>
@@ -130,8 +132,3 @@
 
 </html>
 
-<!-- teste -->
-<!-- <div class="MetadeVertical">
-    
-    </div>
-</div> -->

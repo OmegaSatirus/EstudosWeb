@@ -229,34 +229,55 @@ body{
 .Row1-2H{
     display: flex;
     flex-direction: row;
-    border: orange solid 1px;
     margin: 1%;
 }
 
 .Row1-2V{
     display: flex;
     flex-direction: column;
-    border: yellow solid 1px;
     margin: 1%;
 }
 
 .MetadeHorizontal{
     width: 50%;
     height: 90%;
-    border: solid red 1px;
+    background-color: #c3d9e2;
+    border-radius: 16px;
     margin: 1%;
     padding: 2.5vh 2.5vw;
 }
-
+.MetadeVertical:nth-child(1){
+    margin-bottom:70% ;
+}
 .MetadeVertical{
     width: 90%;
     height: 50%;
-    border: 1px solid blue ;
-    margin: 1%;
+    margin: 1%; 
 }
 
 .Tr-TablePrincipalV{
     display: flex;
     flex-direction: column;
+}
+
+#Ingredientes ul {
+list-style: none;
+}
+
+.NoBorderInpt{
+    border: none;
+    padding: .9vh .9vw;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin: .5%;
+}
+
+.AjusteDeTamanho{
+    padding-top:6%;
+    height: 29vh;
 }
 /* Fim formatação paginas de comida */
