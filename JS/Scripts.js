@@ -13,6 +13,3 @@ const ListaDeProdutos = [
     {Nome:"Comida11", Preco: 19.99},
     {Nome:"Comida12", Preco: 25.99},
 ]
-fuction AdcProduto(){
-    document.getElementById
-}
