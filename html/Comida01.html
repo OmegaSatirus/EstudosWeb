@@ -23,7 +23,7 @@
         <section id="Comida">
             <div id="AreaRolagem" class="AlinhadoCen">
                 <div id="GrandeImagem"></div>
-                <h3>Comida 01</h3>
+                <h3 id="NomeComida">Comida 01</h3>
                 <div class="Row1-2H AlinhadoCen">
                     <div class="MetadeHorizontal">
                         <div id="Ingredientes">
@@ -112,22 +112,19 @@
                             <p id="Itens">0</p>
                         </div>
                         <br>
-                        <button id="AdcProduto" onclick="AdcProduto()" class="NoBorderInpt">
+                        <button id="AdcProduto" onclick="RmvOuAdcProduto()" class="NoBorderInpt">
                             <h3><b>+</b></h3>
                         </button>
                         <div>
                             <p id="Total">0.00</p>
                         </div>
-                        <button id="RmvProduto" onclick="RmvProduto()" class="NoBorderInpt">
+                        <button id="RmvProduto" onclick="RmvOuAdcProduto()" class="NoBorderInpt">
                             <h3><b>-</b></h3>
-                        </button>
-                        <button onclick=Teste()>
-                                teste
                         </button>
                     </div>
                     <div class="MetadeHorizontal AjusteDeTamanho AlinhadoCen">
                         <h2>ARRASTE E CONFIRME</h2>
-                        <input type="range" min="0" max="25" value="0" step="1">
+                        <input id="Confirmacao" type="range" min="0" max="25" value="0" step="1">
                     </div>
                 </div>
             </div>

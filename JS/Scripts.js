@@ -14,36 +14,55 @@ const ListaDeProdutos = [
     { Nome: "Comida12", Preco: 25.99 },
 ];
 
-// Conversão de número
 const PrecoProduto = document.getElementById('PrecoProduto');
-const textoPreco = PrecoProduto.innerText;
-const numeroPreco = parseFloat(textoPreco);
-
-// Soma de valores
-let numItens = 0; 
-
+const NomeProduto = document.getElementById('NomeComida');
 const Resultado = document.getElementById('Total');
 const Soma = document.getElementById('AdcProduto');
 const Menos = document.getElementById('RmvProduto');
 const Itens = document.getElementById('Itens');
+const RangeConfirm = document.getElementById('Confirmacao');
 
-function RmvProduto() {
-    if (numItens === 0) {
-        alert("Não tem nenhum item!");
-    } else {
+let numItens = 0;
+
+function AtualizarTotal() {
+    const numeroPreco = parseFloat(PrecoProduto.innerText);
+    const total = numItens * numeroPreco;
+    Resultado.innerText = total.toFixed(2);
+}
+
+function RmvOuAdcProduto(operacao) {
+    if (operacao === 'adicao') {
+        numItens += 1;
+    } else if (operacao === 'remocao' && numItens > 0) {
         numItens -= 1;
-        Itens.innerText = numItens; 
+    }
+    AtualizarItens();
+}
+
+function AtualizarItens() {
+    Itens.innerText = numItens;
+    AtualizarTotal();
+}
+
+function AdcCarrinho() {
+    const numeroPreco = parseFloat(PrecoProduto.innerText);
+    Carrinho.push({ Nome: NomeProduto.innerText, Preco: numeroPreco, QTD: numItens });
+}
+
+function Confirmacao() {
+    if (RangeConfirm.value == 25) {
+        AdcCarrinho();
+        alert("Produto(s) Adicionado(s) com sucesso!");
+        const ValorTotal = numItens * parseFloat(PrecoProduto.innerText);
+        console.log("Carrinho:", Carrinho);
+        console.log("Nome do Produto:", NomeProduto.innerText);
+        console.log("Valor Total:", ValorTotal.toFixed(2));
+        console.log("Preço do Produto:", parseFloat(PrecoProduto.innerText));
+        console.log("Quantidade de Itens:", numItens);
     }
 }
 
-function AdcProduto() {
-    numItens += 1;
-    Itens.innerText = numItens; 
-}
 
-Menos.addEventListener('click', RmvProduto);
-Soma.addEventListener('click', AdcProduto);
-
-function Teste() {
-    console.log(numItens);
-}
+Soma.addEventListener('click', () => RmvOuAdcProduto('adicao'));
+Menos.addEventListener('click', () => RmvOuAdcProduto('remocao'));
+RangeConfirm.addEventListener('input', Confirmacao);
