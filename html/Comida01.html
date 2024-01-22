@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Style.css">
-    <link href="../JS/Scripts.js">
+    <script src="../JS/Scripts.js" defer></script>
     <title>Cardapio</title>
 </head>
 
@@ -106,15 +106,23 @@
                 <div class="Row1-2H AlinhadoCen">
                     <div class="MetadeHorizontal">
                         <h3>Adicionar ao carrinho</h3><br>
-                        <h3>R$ 25</h3>
-                        <button class="NoBorderInpt">
+                        <h3 id="PrecoProduto">25.99</h3>
+                        <br>
+                        <div>
+                            <p id="Itens">0</p>
+                        </div>
+                        <br>
+                        <button id="AdcProduto" onclick="AdcProduto()" class="NoBorderInpt">
                             <h3><b>+</b></h3>
                         </button>
-                        <div id="Total">
-                            <p>0</p>
+                        <div>
+                            <p id="Total">0.00</p>
                         </div>
-                        <button class="NoBorderInpt">
+                        <button id="RmvProduto" onclick="RmvProduto()" class="NoBorderInpt">
                             <h3><b>-</b></h3>
+                        </button>
+                        <button onclick=Teste()>
+                                teste
                         </button>
                     </div>
                     <div class="MetadeHorizontal AjusteDeTamanho AlinhadoCen">
